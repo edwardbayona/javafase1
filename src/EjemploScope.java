@@ -1,5 +1,7 @@
 
-public class EjemploCondicionales2 {
+public class EjemploScope {
+	// todo lo delimitado por yaves
+	
 	public static void main(String[] args) {
 		System.out.println("hola");
 		//condicionales
