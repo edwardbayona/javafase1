@@ -9,7 +9,7 @@ public class EjemploCiclos {
 			
 			System.out.println("el numero es"+i);
 			
-			i++;
+			i++; //con += 1;uno en uno / con +=2; de dos en dos
 		}
 		
 		System.out.println("salio del ciclo");
