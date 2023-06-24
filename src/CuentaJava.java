@@ -1,10 +1,13 @@
 
-public class CuentaJava {
+class CuentaJava {
 	
-	double saldo ;
-	int numeroCuenta;
+	private double saldo ;
+	private int numeroCuenta;
 	String NombreUsuario;
-	int agencia;
+	private int agencia;
+	Cliente titular = new Cliente();
+	
+	
 	
 	//definicion de metodos
 	
@@ -45,5 +48,38 @@ public class CuentaJava {
 		
 	}
 	
+	
+	//metodo getter
+	
+	public double getSaldo(){
+		
+		return this.saldo;
+		
+	}
+	
+	public int getAgencia() {
+		
+		return this.agencia;
+	}
+	
+	//setter
+	
+	public void setAgencia(int nuevaAgencia){
+		if(nuevaAgencia >0) {
+		this.agencia = nuevaAgencia;
+		}else {
+			
+			System.out.println("no se permiten valores negativos");
+		}
+		
+	}
+	
+	public void setTitular(Cliente titular) {
+		this.titular = titular;
+	}
+	
+	public Cliente getTitular() {
+		return titular;
+	}
 
 }
